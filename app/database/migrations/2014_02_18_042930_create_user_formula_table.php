@@ -8,7 +8,7 @@ class CreateUserFormulaTable extends Migration
 
     public function up()
     {
-        Schema::table('user_formula', function (Blueprint $table) {
+        Schema::create('user_formula', function (Blueprint $table) {
             $table->integer('user_id');
             $table->integer('formula_id');
         });
