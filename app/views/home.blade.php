@@ -12,14 +12,14 @@
         </li>
     </ol>
 
-    <form action="/formulae" method="POST">
-        <textarea placeholder="Your Homebrew formulae" name="formulae"></textarea>
+    {{ Form::open(array('route' => 'formulae')) }}
+        <textarea placeholder="Your Homebrew formulae" name="formulae" rows="6"></textarea>
         <div>
             <input type="email" placeholder="Email" name="email">
         </div>
         <div>
             <button type="submit">Submit</button>
         </div>
-    </form>
+    {{ Form::close() }}
 
 @stop

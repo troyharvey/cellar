@@ -17,3 +17,10 @@ Route::get('/', array(
         return View::make('home');
     }
 ));
+
+Route::post('/formulae', array(
+    'as' => 'formulae',
+    function () {
+        dd(Input::get('formulae'));
+    }
+));
