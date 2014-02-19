@@ -20,5 +20,23 @@ class FormulaController extends BaseController
         foreach ($formulae as $formula) {
             $user->formulas()->attach($formula->id);
         }
+
+        return Redirect::route('trending');
+    }
+
+    /**
+     * List the 15 most popular home brew formula
+     * @return View
+     */
+    public function trending()
+    {
+        $formulas = DB::table('formulas')
+            ->select('name', DB::raw('count(*) as total'))
+            ->groupBy('name')
+            ->orderBy('total', 'DESC')
+            ->take(15)
+            ->get();
+
+        return View::make('trending', compact('formulas'));
     }
 }
