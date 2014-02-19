@@ -7,4 +7,7 @@ Route::get('/', array(
     }
 ));
 
-Route::post('/formulae', 'FormulaController@store');
+Route::post('/formulae', array(
+    'as'   => 'formulae',
+    'uses' => 'FormulaController@store'
+));
