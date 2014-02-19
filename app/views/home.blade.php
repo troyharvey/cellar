@@ -13,7 +13,7 @@
     </ol>
 
     {{ Form::open(array('route' => 'formulae')) }}
-        <textarea placeholder="Your Homebrew formulae" name="formulae" rows="6"></textarea>
+        <textarea placeholder="Your Homebrew formulae" name="formulae" rows="6" autofocus></textarea>
         <div>
             <input type="email" placeholder="Email" name="email">
         </div>
