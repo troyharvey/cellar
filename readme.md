@@ -3,6 +3,8 @@ An app for sharing your favorite Homebrew formulae. I gave a talk about making t
 
 ![screenshot](http://troyharvey.github.io/cellar/cellar.png)
 
+<script async class="speakerdeck-embed" data-id="1b58b99081850131d97b1ae9d79fbfac" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
 #### Installing
 ```
 git clone git@github.com:troyharvey/cellar.git
